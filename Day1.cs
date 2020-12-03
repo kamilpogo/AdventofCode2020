@@ -17,10 +17,8 @@ public class Program
 		foreach(int i in l) {
 			var a = Find(sum - i, l);
 			if(a != default(int)) {
-				int b = sum - i - a;
-				if(b != default(int)) {					
-					return  i*a*b;
-				}
+				int b = sum - i - a;			
+				return  i*a*b;
 			}
 		}
 		return -1;
